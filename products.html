@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Perfume Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap" rel="stylesheet">
+  <!-- шрифт -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container">
+      <a class="logo" >The Perfume Gallery</a>
+
+      <!-- Кнопка бургера -->
+      <button class="burger" id="burger">&#9776;</button>
+
+      <!-- Навигация -->
+      <nav class="nav" id="nav">
+        <a href="face_page.html">О нас</a>
+        <a href="products.html">Ассортимент</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Заголовок страницы -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Ассортимент духов</h1>
+    </div>
+  </section>
+
+  <!-- Поиск -->
+  <section class="search-section">
+  <div class="container">
+    <input type="text" id="searchInput" placeholder="Поиск духов..." class="search-input">
+  </div>
+</section>
+
+
+  <!-- Каталог продуктов -->
+  <section class="product-grid">
+
+    <div class="container-product">
+
+      <a data-id="1" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p1.jpg" alt="Духи 1">
+        <h3>Green Tea</h3>
+        <p>240 BYN</p>
+      </div>
+    </a>
+
+    <a data-id="2" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p2.jpg" alt="Духи 2">
+        <h3>Blossom Cherry</h3>
+        <p>280 BYN</p>
+      </div>
+    </a>
+
+    <a data-id="3" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p3.jpg" alt="Духи 2">
+        <h3>Wild Blackcurrant</h3>
+        <p>300 BYN</p>
+      </div>
+    </a>
+
+    <a data-id="4" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p4.jpg" alt="Духи 2">
+        <h3>White Flowers</h3>
+        <p>200 BYN</p>
+      </div>
+    </a>
+
+    <a data-id="5" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p5.jpg" alt="Духи 2">
+        <h3>Sea Breeze</h3>
+        <p>179 BYN</p>
+      </div>
+    </a>
+
+    <a data-id="6" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p6.jpg" alt="Духи 2">
+        <h3>Amber Vanilla</h3>
+        <p>225 BYN</p>
+      </div>
+    </a>
+
+    <a data-id="7" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p7.jpg" alt="Духи 2">
+        <h3 style="font-size: 21px;">Black Pepper & Grapefruit</h3>
+        <p>390 BYN</p>
+      </div>
+    </a>
+
+    <a data-id="8" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p8.jpg" alt="Духи 2">
+        <h3>Woody Notes</h3>
+        <p>249 BYN</p>
+      </div>
+    </a>
+
+    <a data-id="9" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p9.jpg" alt="Духи 2">
+        <h3>Rose Fruity</h3>
+        <p>319 BYN</p>
+      </div>
+    </a>
+
+    <a data-id="10" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p10.jpg" alt="Духи 2">
+        <h3>Night Bramble</h3>
+        <p>350 BYN</p>
+      </div>
+    </a>
+
+    <a data-id="11" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p11.jpg" alt="Духи 2">
+        <h3>Sweet Peach</h3>
+        <p>300 BYN</p>
+      </div>
+    </a>
+
+    <a data-id="12" class="product-card-link">
+      <div class="product-card">
+        <img src="parfume_images/p12.jpg" alt="Духи 2">
+        <h3>Raspberry Vanilla</h3>
+        <p>249 BYN</p>
+      </div>
+    </a>
+
+      <!-- Добавьте остальные товары -->
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 The Perfume Gallery</p>
+      <p>Maslovskaya Ksenya</p>
+    </div>
+  </footer>
+
+
+  <!-- Модальное окно -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <!-- Слайдер -->
+      <div class="slider-container">
+        <button class="prev">&#10094;</button>
+        <img src="" alt="Духи" class="slider-image">
+        <button class="next">&#10095;</button>
+      </div>
+
+      <h2 class="modal-title"></h2>
+      <h1 class="modal-price"></h1>
+      <p class="modal-description"></p>
+
+    <!-- Кнопка заказа -->
+      <a href="order.html" class="btn modal-btn">Заказать сейчас</a>
+    </div>
+  </div>
+
+<script src="js/script.js"></script>
+<script src="js/script2.js"></script>
+</body>
+</html>
